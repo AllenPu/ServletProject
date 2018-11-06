@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <servlet>
+        <servlet-name>movie</servlet-name>
+        <servlet-class>server.movie</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>allthemovie</servlet-name>
+        <servlet-class>server.allthemovie</servlet-class>
+    </servlet>
+     <servlet>
+        <servlet-name>addmovie</servlet-name>
+        <servlet-class>server.addmovie</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>reviewMessage</servlet-name>
+        <servlet-class>server.reviewMessage</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>acceptMessage</servlet-name>
+        <servlet-class>server.acceptMessage</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>largeorsmall</servlet-name>
+        <servlet-class>server.largeorsmall</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>largeorsmall</servlet-name>
+        <url-pattern>/largeorsmall</url-pattern>
+    </servlet-mapping>
+
+     <servlet-mapping>
+        <servlet-name>reviewMessage</servlet-name>
+        <url-pattern>/reviewMessage</url-pattern>
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>acceptMessage</servlet-name>
+        <url-pattern>/acceptMessage</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>movie</servlet-name>
+        <url-pattern>/movie</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>allthemovie</servlet-name>
+        <url-pattern>/allthemovie</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>addmovie</servlet-name>
+        <url-pattern>/addmovie</url-pattern>
+    </servlet-mapping>
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+        </welcome-file-list>
+    </web-app>
